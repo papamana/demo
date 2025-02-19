@@ -16,3 +16,10 @@ services:
           memory: 512M
         reservations:
           memory: 256M
+    networks:
+      - papamana_network
+
+networks:
+  papamana_network:
+    name: papamana_network
+    driver: bridge
