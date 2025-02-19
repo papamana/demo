@@ -1,5 +1,5 @@
 services:
-  web:
+  web_flask:
     build: .
     ports:
       - "5000:5000"
