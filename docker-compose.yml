@@ -10,3 +10,9 @@ services:
       - FLASK_APP=app.py
       - HOST=0.0.0.0
     restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+        reservations:
+          memory: 256M
